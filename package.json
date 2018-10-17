@@ -1,9 +1,10 @@
 {
   "name": "usedComponents",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "./build/index.js",
   "license": "MIT",
   "scripts": {
+    "build": "babel index.js -d build", 
     "test": "mocha --recursive --require @babel/register --require ./test-setup.js '**/*.test.js'"
   },
   "dependencies": {
