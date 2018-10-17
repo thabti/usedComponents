@@ -1,4 +1,4 @@
-# ComponentsUsed
+# Componentsused
 
 Simple AST parse to identify which React components have been used in a given file
 
@@ -11,7 +11,9 @@ Simple AST parse to identify which React components have been used in a given fi
 ```
 import componentsUsed from 'componentsUsed';
 
+const code = "import { Button } from '../Button';"
 
-componentsUsed()
+const reuslt = componentsUsed(code)
+// ['Button']
 
 ```
